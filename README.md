@@ -147,7 +147,7 @@ A C# example showing how to receive data from an external application is install
 <img src="./img/rec14.png" alt="drawing" width="500"/><br/>
 </p>
 
-#### C# code snippet
+#### Code snippets
 
 This is an example how to send triggers from an external application to Unicorn Recorder. The trigger value must be sent as a as ASCII character via UDP in order to be received properly.
 
