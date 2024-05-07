@@ -139,10 +139,19 @@ If BDF logging is enabled data is stored in the BDF+ file format. Data can be lo
 <img src="./img/rec13.png" alt="drawing" width="500"/><br/>
 </p>
 
-
 #### C# example
 
+A C# example showing how to receive data from an external application is installed with Unicorn Recorder. The example is installed to 'C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Examples\UDP Trigger Sender'
+
+<p align="center">
+<img src="./img/rec14.png" alt="drawing" width="500"/><br/>
+</p>
+
 #### C# code snippet
+
+This is an example how to send triggers from an external application to Unicorn Recorder. The trigger value must be sent as a as ASCII character via UDP in order to be received properly.
+
+This C# example can be modified and integrated into an application:
 
 ```C#
 //Initialize socket
@@ -154,6 +163,20 @@ socket.Connect(endPoint);
 //Send trigger
 byte[] sendBytes = Encoding.ASCII.GetBytes("1");
 socket.SendTo(sendBytes, endPoint);
+```
+
+This Python example can be modified and integrated into an application:
+
+```Python
+import socket
+
+# Initialize socket
+socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+endPoint = ("127.0.0.1", 1000)
+
+# Send trigger
+sendBytes = b"1"
+socket.sendto(sendBytes, endPoint)
 ```
 
 #### Sending data via LSL
