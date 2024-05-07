@@ -155,7 +155,7 @@ TBD
 </p>
 
 ### 4. Help
-TBD
+The help button opens the user manual.
 
 ### Processing and display settings
 
