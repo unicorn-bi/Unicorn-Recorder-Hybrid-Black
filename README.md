@@ -41,8 +41,9 @@ This dialog is displayed if the connection attempt failed. Make sure that the de
 </p>
 
 ### Control bar
-
+<p align="center">
 <img src="./img/rec4.png" alt="drawing" width="800"/><br/>
+</p>
 
 ### 1. Start/Stop acquisition
 
