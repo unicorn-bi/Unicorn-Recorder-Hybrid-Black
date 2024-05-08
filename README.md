@@ -19,6 +19,9 @@ Unicorn Recorder is an application used to acquire, visualize and record data fr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Device settings](#device-settings)<br/>
 &nbsp;&nbsp;&nbsp;[Processing and display settings](#processing-and-display-settings)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Amplitude range](#amplitude-range)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Filters](#filters)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Notch](#notch)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[OSCAR](#oscar)<br/>
 &nbsp;&nbsp;&nbsp;[Scope](#scope)<br/>
 &nbsp;&nbsp;&nbsp;[Signal quality scope](#signal-quality-scope)<br/>
 [Using Unicorn Recorder for a research experiment](#using-unicorn-recorder-for-a-research-experiment)<br/>
@@ -257,7 +260,7 @@ The 'Notch' box allows you to apply predefined IIR filters to the raw data to re
 - Cascading 50 Hz - removes 50 Hz and multiples
 - Cascading 60 Hz - removes 60 Hz and multiples
 - Cascading 50 & 60 Hz  - removes 50, 60 Hz and multiples
-- None
+- None - No filter applied
 
 #### OSCAR
 
