@@ -109,7 +109,7 @@ and the 'File prefix' is set to 'UnicornRecorder'
 
 #### CSV file format
 
-If CSV logging is enabled data is stored in serialized, comma-seperated format. The number of columns depend on configuration defined in the [Acquisition Settings](#acquisition-settings)..
+ Data is stored in serialized, comma-seperated format, if CSV logging is enabled. The number of columns depend on configuration defined in the [Acquisition Settings](#acquisition-settings)..
 
 <p align="center">
 <img src="./img/rec9.png" alt="drawing" width="700"/><br/>
@@ -141,7 +141,7 @@ data = unicornrecorder_read('UnicornRecorder_20190122_220912.csv');
 
 #### BDF file format
 
-If BDF logging is enabled data is stored in the BDF+ file format. Data can be loaded from applications supporting BDF file format like EDFBrowser. The number of signals depend on configuration defined in the [Acquisition Settings](#acquisition-settings).
+Data is stored in the BDF+ file format if BDF logging is enabled. Data can be loaded from applications supporting BDF file format like EDFBrowser. The number of signals depend on configuration defined in the [Acquisition Settings](#acquisition-settings).
 
 <p align="center">
 <img src="./img/rec10.png" alt="drawing" width="700"/><br/>
@@ -149,11 +149,17 @@ If BDF logging is enabled data is stored in the BDF+ file format. Data can be lo
 
 ### Network settings
 
+Unicorn Recorder features multiple network interfaces for sending triggers from an external application to Unicorn Recorder or data from Unicorn Recorder to an external application.
+
 <p align="center">
 <img src="./img/rec7.png" alt="drawing" width="500"/><br/>
 </p>
 
 #### Receiving triggers via UDP
+
+Triggers can be sent from an external application like a stimulus presentation tool via UDP
+
+IP and Port can be modified. The default ip is set to the ```127.0.0.1```. The default port is set to `1000`. The port must differ from the port used for receiving triggers.
 
 <p align="center">
 <img src="./img/rec13.png" alt="drawing" width="500"/><br/>
@@ -204,14 +210,38 @@ socket.sendto(sendBytes, endPoint)
 ```
 
 #### Sending data via LSL
-TBD
+
+It is possible to send data from Unicorn Recorder to an external application using LSL.
 
 #### C# example
+
+A C# example showing how to receive data from Unicorn Recorder in C# via LSL.
+
+The example is installed to 
+
+```C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Examples\LSL Receiver```
+
+<p align="center">
+<img src="./img/rec17.png" alt="drawing" width="500"/><br/>
+</p>
 
 #### Sending data via UDP
-TBD
+
+It is possible to send data from Unicorn Recorder to an external application using UDP.
+
+IP and Port can be modified. The default ip is set to the ```127.0.0.1```. The default port is set to `1001`. The port must differ from the port used for receiving triggers.
 
 #### C# example
+
+A C# example showing how to receive data from Unicorn Recorder in C# via UDP.
+
+The example is installed to 
+
+```C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Examples\UDP Receiver```
+
+<p align="center">
+<img src="./img/rec18.png" alt="drawing" width="500"/><br/>
+</p>
 
 #### Device settings
 
@@ -225,7 +255,12 @@ Device information can be read in the device dialog. The serial number and softw
 The help button opens the user manual.
 
 ### Processing and display settings
-TBD
+
+It is possible to modify signal processing and data visualization using this toolbar.
+
+<p align="center">
+<img src="./img/rec16.png" alt="drawing" width="700"/><br/>
+</p>
 
 #### Amplitude range
 The amplitude range changes the displayed amplitude range of all EEG channels in the [Data Viewer](#data-viewer). 
