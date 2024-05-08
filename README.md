@@ -21,6 +21,7 @@ Unicorn Recorder is an application used to acquire, visualize and record data fr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Amplitude range](#amplitude-range)<br/>
 &nbsp;&nbsp;&nbsp;[Scope](#scope)<br/>
 &nbsp;&nbsp;&nbsp;[Signal quality scope](#signal-quality-scope)<br/>
+[Using Unicorn Recorder for a research experiment](#using-unicorn-recorder-for-a-research-experiment)<br/>
 
 ## Starting Unicorn Recorder From Unicorn Suite
 
@@ -201,8 +202,9 @@ TBD
 
 #### C# example
 
-
 #### Device settings
+
+Device information can be read in the device dialog. The serial number and software versions of the Unicorn Brain Interface currently used are displayed in this dialog. Additionally, the digital outputs can be controlled within this dialog.
 
 <p align="center">
 <img src="./img/rec8.png" alt="drawing" width="500"/><br/>
@@ -267,3 +269,11 @@ he Data Viewer displays incoming data in real-time.  All channels provided by th
 </p>
 
 The signal quality scope provides feedback about the signal quality. Therefore, the raw EEG is filtered to a certain frequency range where amplitude variations are observed. It takes about 30 seconds until the filters have stabilized and the signal quality scope is reliable. If Unicorn Hybrid EEG Electrodes are not setteling in the expected amplitude range, electrodes turn red, indicating bad signal quality. All Unicorn Hybrid EEG Electrodes should turn green if the EEG amplitude stays in a proper range.
+
+## Using Unicorn Recorder for a research experiment
+
+This image illustrates a typical use case for BCI research. It shows the capability to send a trigger from an external stimulus presentation framework to 'Unicorn Recorder', synchronizing the trigger with the data captured by 'Unicorn Recorder' ([Receiving triggers via UDP](#receiving-triggers-via-udp)). Both the data and trigger can then be transmitted to an external application using network outputs for real-time processing ([Network Settings](#network-settings)) using [UDP](#sending-data-via-udp) or [LSL](#sending-data-via-lsl). Additionally, the trigger and data can be processed offline from the BDF or CSV recordings ([Record Settings](#recording-settings)).
+
+<p align="center">
+<img src="./img/rec15.png" alt="drawing"/><br/>
+</p>
