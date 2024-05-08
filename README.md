@@ -215,13 +215,43 @@ The help button opens the user manual.
 TBD
 
 #### Amplitude range
-TBD
+The amplitude range changes the displayed amplitude range of all EEG channels in the [Data Viewer](#data-viewer). 
 
 #### Filters
-TBD
+
+The 'Filter' box allows you to apply predefined IIR filters to the raw data to extract specified frequency bands and remove artifacts. Predefined filters settings are:
+
+- 0.1 – 30 Hz Bandpass
+- 0.1 – 50 Hz Bandpass
+- 0.5 – 30 Hz Bandpass
+- 0.5 – 50 Hz Bandpass
+- 1 – 30 Hz Bandpass
+- 1 – 50 Hz Bandpass
+- 2 – 30 Hz Bandpass
+- 2 – 50 Hz Bandpass
+-  $\gt$ 0.1 Hz Highpass
+-  $\gt$ 0.5 Hz Highpass
+-  $\gt$ 1 Hz Highpass
+-  $\gt$ 2 Hz Highpass
+-  $\lt$ 20 Hz Lowpass
+-  $\lt$ 50 Hz Lowpass
+- None - No filter applied
+
+#### Notch
+
+The 'Notch' box allows you to apply predefined IIR filters to the raw data to remove power line hum from data.
+
+- 50 Hz 
+- 60 Hz 
+- 50 & 60 Hz 
+- Cascading 50 Hz - removes 50 Hz and multiples
+- Cascading 60 Hz - removes 60 Hz and multiples
+- Cascading 50 & 60 Hz  - removes 50, 60 Hz and multiples
+- None
 
 #### OSCAR
-TBD
+
+OSCAR is a real-time pre-processing module that removes motion, cable, blink, and other artifacts from EEG signals. It saves valuable data and time and enables BCI experiments under difficult conditions. Oscar can be activated or deactivated from the check box.
 
 ### Data viewer
 <p align="center">
