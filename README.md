@@ -210,6 +210,16 @@ TBD
 The help button opens the user manual.
 
 ### Processing and display settings
+TBD
+
+#### Amplitude range
+TBD
+
+#### Filters
+TBD
+
+#### OSCAR
+TBD
 
 ### Data viewer
 <p align="center">
