@@ -159,7 +159,7 @@ The example is installed to
 
 #### Code snippets
 
-This is an example how to send triggers from an external application to Unicorn Recorder. The trigger value must be sent as a as ASCII character via UDP in order to be received properly.
+These exsamples show how to send triggers from an external application to Unicorn Recorder. The trigger value must be sent as a as ASCII character via UDP in order to be received properly.
 
 This C# example can be modified and integrated into an application:
 
