@@ -25,6 +25,7 @@ Unicorn Recorder is an application used to acquire, visualize and record data fr
 &nbsp;&nbsp;&nbsp;[Scope](#scope)<br/>
 &nbsp;&nbsp;&nbsp;[Signal quality scope](#signal-quality-scope)<br/>
 [Using Unicorn Recorder for a research experiment](#using-unicorn-recorder-for-a-research-experiment)<br/>
+[Example: Using keystrokes as triggers](#example-using-keystrokes-as-triggers)<br/>
 
 ## Starting Unicorn Recorder From Unicorn Suite
 
@@ -326,9 +327,9 @@ This image illustrates a typical use case for BCI research. It shows the capabil
 <img src="./img/rec15.png" alt="drawing"/><br/>
 </p>
 
-## Example keyboard marker
+## Example: Using keystrokes as triggers
 
-This example shows how to use key strokes as trigger for Unicorn Recorder.
+This example shows how to use keystrokes as trigger for Unicorn Recorder.
 
 ```Python
 import keyboard
