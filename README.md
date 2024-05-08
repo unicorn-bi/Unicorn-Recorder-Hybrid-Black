@@ -165,7 +165,7 @@ IP and Port can be modified. The default ip is set to the ```127.0.0.1```. The d
 <img src="./img/rec13.png" alt="drawing" width="500"/><br/>
 </p>
 
-#### C# example
+##### C# example
 
 A C# example showing how to receive data from an external application is installed with Unicorn Recorder. 
 
@@ -177,7 +177,7 @@ The example is installed to
 <img src="./img/rec14.png" alt="drawing" width="500"/><br/>
 </p>
 
-#### Code snippets
+##### Code snippets
 
 These exsamples show how to send triggers from an external application to Unicorn Recorder. The trigger value must be sent as a as ASCII character via UDP in order to be received properly.
 
@@ -213,7 +213,9 @@ socket.sendto(sendBytes, endPoint)
 
 It is possible to send data from Unicorn Recorder to an external application using LSL.
 
-#### C# example
+It is possible to modify the LSL streamname. The default streamname is set to ```UnicornRecorderLSLStream```.
+
+##### C# example
 
 A C# example showing how to receive data from Unicorn Recorder in C# via LSL.
 
@@ -231,7 +233,7 @@ It is possible to send data from Unicorn Recorder to an external application usi
 
 IP and Port can be modified. The default ip is set to the ```127.0.0.1```. The default port is set to `1001`. The port must differ from the port used for receiving triggers.
 
-#### C# example
+##### C# example
 
 A C# example showing how to receive data from Unicorn Recorder in C# via UDP.
 
