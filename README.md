@@ -25,7 +25,6 @@ Unicorn Recorder is an application used to acquire, visualize and record data fr
 &nbsp;&nbsp;&nbsp;[Scope](#scope)<br/>
 &nbsp;&nbsp;&nbsp;[Signal quality scope](#signal-quality-scope)<br/>
 [Using Unicorn Recorder for a research experiment](#using-unicorn-recorder-for-a-research-experiment)<br/>
-[Example: Using keystrokes as triggers](#example-using-keystrokes-as-triggers)<br/>
 
 ## Starting Unicorn Recorder From Unicorn Suite
 
