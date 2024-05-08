@@ -95,7 +95,7 @@ Data can be recorder to BDF or CSV files. It is possible to select the recording
 
 #### CSV file format
 
-If CSV logging is enabled data is stored in serialized, comma-seperated format. The number of columns depend on configuration defined in the [Acquisition Settings](#31-acquisition-settings).
+If CSV logging is enabled data is stored in serialized, comma-seperated format. The number of columns depend on configuration defined in the [Acquisition Settings](#acquisition-settings)..
 
 <p align="center">
 <img src="./img/rec9.png" alt="drawing" width="700"/><br/>
@@ -103,7 +103,13 @@ If CSV logging is enabled data is stored in serialized, comma-seperated format. 
 
 #### Loading CSV files in Matlab
 
-An import script is provided to read the Unicorn Recorder file into Matlab. Open Matlab and select “Set Path”. Add the folder “C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\MATLAB Tools” to the Matlab search path and click save.
+An import script is provided to read the Unicorn Recorder file into Matlab. Open Matlab and select “Set Path”. 
+
+Add the folder:
+
+ 'C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\MATLAB Tools'
+
+ to the Matlab search path and click save.
 
 ```Matlab
 [datastruct] = unicornrecorder_read(filename)
@@ -121,7 +127,7 @@ data = unicornrecorder_read('UnicornRecorder_20190122_220912.csv');
 
 #### BDF file format
 
-If BDF logging is enabled data is stored in the BDF+ file format. Data can be loaded from applications supporting BDF file format like EDFBrowser. The number of signals depend on configuration defined in the [Acquisition Settings](#31-acquisition-settings).
+If BDF logging is enabled data is stored in the BDF+ file format. Data can be loaded from applications supporting BDF file format like EDFBrowser. The number of signals depend on configuration defined in the [Acquisition Settings](#acquisition-settings).
 
 <p align="center">
 <img src="./img/rec10.png" alt="drawing" width="700"/><br/>
@@ -141,7 +147,11 @@ If BDF logging is enabled data is stored in the BDF+ file format. Data can be lo
 
 #### C# example
 
-A C# example showing how to receive data from an external application is installed with Unicorn Recorder. The example is installed to 'C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Examples\UDP Trigger Sender'
+A C# example showing how to receive data from an external application is installed with Unicorn Recorder. 
+
+The example is installed to 
+
+'C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Examples\UDP Trigger Sender'
 
 <p align="center">
 <img src="./img/rec14.png" alt="drawing" width="500"/><br/>
