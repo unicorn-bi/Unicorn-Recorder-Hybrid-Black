@@ -325,3 +325,35 @@ This image illustrates a typical use case for BCI research. It shows the capabil
 <p align="center">
 <img src="./img/rec15.png" alt="drawing"/><br/>
 </p>
+
+## Example keyboard marker
+
+This example shows how to use key strokes as trigger for Unicorn Recorder.
+
+```Python
+import keyboard
+import socket
+
+def on_key_event(event):
+    if event.event_type == keyboard.KEY_DOWN:
+        sendBytes = ''
+        if event.name == 'a':
+            # Send trigger
+            sendBytes = b"1"
+        elif event.name == 's':
+            # Send trigger
+            sendBytes = b"2"
+
+        #add your keys/triggers here
+
+        if len(sendBytes)>0:
+            print('Key: ' + event.name + ' Sending: ' + str(sendBytes))
+            socket.sendto(sendBytes, endPoint)
+
+# Initialize socket
+socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+endPoint = ("127.0.0.1", 1000)
+
+keyboard.on_press(on_key_event)
+keyboard.wait('esc')
+```
