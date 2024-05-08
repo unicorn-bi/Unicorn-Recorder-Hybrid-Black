@@ -90,7 +90,7 @@ Ch. 14 - GYR Z - Gyroscope Z<br/>
 Ch. 15 - CNT - Counter<br/>
 Ch. 16 - BAT - Battery Level<br/>
 Ch. 17 - VALID - Validation Indicator <br/>
-Ch. 18 - DT - Delta time<br/>
+Ch. 18 - DT - Delta time / Timespan between two received samples<br/>
 Ch. 19 - STATUS - Status / Trigger Value<br/>
 
 ### Recording settings
