@@ -74,24 +74,24 @@ Acquisition parameters can be modified in the acquisition dialog. It is possible
 
 The default order is:
 
-Ch. 1 - EEG 1 - EEG channel 1<br/>
-Ch. 2 - EEG 2 - EEG channel 2<br/>
-Ch. 3 - EEG 3 - EEG channel 3<br/>
-Ch. 4 - EEG 4 - EEG channel 4<br/>
-Ch. 5 - EEG 5 - EEG channel 5<br/>
-Ch. 6 - EEG 6 - EEG channel 6<br/>
-Ch. 7 - EEG 7 - EEG channel 7<br/>
-Ch. 8 - EEG 8 - EEG channel 8<br/>
-Ch. 9 - ACC X - Accelerometer X<br/>
-Ch. 10 - ACC Y - Accelerometer Y<br/>
-Ch. 11 - ACC Z - Accelerometer Z<br/>
-Ch. 12 - GYR X - Gyroscope X<br/>
-Ch. 13 - GYR Y - Gyroscope Y<br/>
-Ch. 14 - GYR Z - Gyroscope Z<br/>
+Ch. 1 - EEG 1 - EEG channel 1 in microvolts<br/>
+Ch. 2 - EEG 2 - EEG channel 2 in microvolts<br/>
+Ch. 3 - EEG 3 - EEG channel 3 in microvolts<br/>
+Ch. 4 - EEG 4 - EEG channel 4 in microvolts<br/>
+Ch. 5 - EEG 5 - EEG channel 5 in microvolts<br/>
+Ch. 6 - EEG 6 - EEG channel 6 in microvolts<br/>
+Ch. 7 - EEG 7 - EEG channel 7 in microvolts<br/>
+Ch. 8 - EEG 8 - EEG channel 8 in microvolts<br/>
+Ch. 9 - ACC X - Accelerometer X in g<br/>
+Ch. 10 - ACC Y - Accelerometer Y in g<br/>
+Ch. 11 - ACC Z - Accelerometer Z in g<br/>
+Ch. 12 - GYR X - Gyroscope X in deg/s<br/>
+Ch. 13 - GYR Y - Gyroscope Y in deg/s<br/>
+Ch. 14 - GYR Z - Gyroscope Z in deg/s<br/>
 Ch. 15 - CNT - Counter<br/>
-Ch. 16 - BAT - Battery Level<br/>
-Ch. 17 - VALID - Validation Indicator <br/>
-Ch. 18 - DT - Delta time / Timespan between two received samples<br/>
+Ch. 16 - BAT - Battery Level in percent<br/>
+Ch. 17 - VALID - Validation Indicator<br/>
+Ch. 18 - DT - Delta time / Timespan between two received samples in milliseconds<br/>
 Ch. 19 - STATUS - Status / Trigger Value<br/>
 
 ### Recording settings
