@@ -209,7 +209,7 @@ sendBytes = b"1"
 socket.sendto(sendBytes, endPoint)
 ```
 
-## Example: Using keystrokes as triggers
+##### Example: Using keystrokes as triggers
 
 This example shows how to use keystrokes as trigger for Unicorn Recorder.
 
