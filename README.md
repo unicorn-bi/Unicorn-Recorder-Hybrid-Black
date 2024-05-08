@@ -58,6 +58,8 @@ This button initiates or halts data recording. If data acquisition is not initia
 
 ### 3. Settings
 
+The settings dialog allows to configure acquisition, recording, network and device settings.
+
 ### Acquisition settings
 
 <p align="center">
@@ -90,7 +92,13 @@ Ch. 19 - STATUS - Status / Trigger Value<br/>
 
 ### Recording settings
 
-Data can be recorder to BDF or CSV files. It is possible to select the recording format in the 'Recording' settings. 'Folder path' and 'File prefix' can be modified as well. The default 'Folder path' is set to 'C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder' and the 'File prefix' is set to 'UnicornRecorder'.
+Data can be recorder to BDF or CSV files. It is possible to select the recording format in the 'Recording' settings. 'Folder path' and 'File prefix' can be modified as well. 
+
+The default 'Folder path' is set to:
+
+```C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder```
+ 
+and the 'File prefix' is set to 'UnicornRecorder'
 
 <p align="center">
 <img src="./img/rec6.png" alt="drawing" width="500"/><br/>
@@ -110,7 +118,7 @@ An import script is provided to read the Unicorn Recorder file into Matlab. Open
 
 Add the folder:
 
- 'C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\MATLAB Tools'
+```C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\MATLAB Tools```
 
  to the Matlab search path and click save.
 
@@ -154,7 +162,7 @@ A C# example showing how to receive data from an external application is install
 
 The example is installed to 
 
-'C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Examples\UDP Trigger Sender'
+```C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder\Examples\UDP Trigger Sender```
 
 <p align="center">
 <img src="./img/rec14.png" alt="drawing" width="500"/><br/>
