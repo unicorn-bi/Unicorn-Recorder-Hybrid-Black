@@ -25,6 +25,8 @@ Unicorn Recorder is an application used to acquire, visualize and record data fr
 &nbsp;&nbsp;&nbsp;[Scope](#scope)<br/>
 &nbsp;&nbsp;&nbsp;[Signal quality scope](#signal-quality-scope)<br/>
 [Using Unicorn Recorder for a research experiment](#using-unicorn-recorder-for-a-research-experiment)<br/>
+[Video Tutorial](#video-tutorial)<br/>
+
 
 ## Starting Unicorn Recorder From Unicorn Suite
 
@@ -357,3 +359,7 @@ This image illustrates a typical use case for BCI research. It shows the capabil
 <p align="center">
 <img src="./img/rec15.png" alt="drawing"/><br/>
 </p>
+
+## Video Tutorial
+
+[![BR41N.IO Hackathon inspiration](https://img.youtube.com/vi/kYPzWxZBpn4/0.jpg)](https://youtu.be/kYPzWxZBpn4 "BR41N.IO Hackathon inspiration")
