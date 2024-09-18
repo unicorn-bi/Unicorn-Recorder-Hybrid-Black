@@ -30,7 +30,7 @@ Unicorn Recorder is an application used to acquire, visualize and record data fr
 
 ## Starting Unicorn Recorder From Unicorn Suite
 
-The Unicorn Recorder can be started from the Unicorn Suite. Unicorn Recorder is listed in the Unicorn Suite in the 'Apps' section. Before being able to start Unicorn Recorder, the application must be unlocked using the license manager. The Unicorn must be paired before using it with the Unicorn Recorder. If the Unicorn is paired, the serial number of the device should be listed in the drop-down box in the Unicorn Suite. Select the serial number and press open, start the Unicorn Recorder with the selected device.
+The Unicorn Recorder can be started from the Unicorn Suite. Unicorn Recorder is listed in the Unicorn Suite in the 'Apps' section. The Unicorn must be paired before using it with the Unicorn Recorder. If the Unicorn is paired, the serial number of the device should be listed in the drop-down box in the Unicorn Suite. Select the serial number and press open, start the Unicorn Recorder with the selected device.
 
 <p align="center">
 <img src="./img/rec1.png" alt="drawing" width="500"/><br/>
