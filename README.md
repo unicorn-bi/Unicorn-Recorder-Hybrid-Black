@@ -96,14 +96,23 @@ Ch. 18 - DT - Delta time / Timespan between two received samples in milliseconds
 Ch. 19 - STATUS - Status / Trigger Value<br/>
 
 ### Recording settings
-
-Data can be recorder to BDF or CSV files. It is possible to select the recording format in the 'Recording' settings. 'Folder path' and 'File prefix' can be modified as well. 
+Data can be recorded to BDF or CSV files. It is possible to select the recording format in the 'Recording' settings. 'Folder path' and 'File prefix' can be modified as well.
 
 The default 'Folder path' is set to:
 
 ```C:\Users\<username>\Documents\gtec\Unicorn Suite\Hybrid Black\Unicorn Recorder```
- 
-and the 'File prefix' is set to 'UnicornRecorder'
+
+Four logger types are available, each of which can be individually enabled or disabled:
+
+**Raw Data CSV Logger:** Records unprocessed EEG data in CSV format. The file prefix defaults to `UnicornRawDataRecorder`.
+
+**Raw Data BDF Logger:** Records unprocessed EEG data in BDF+ format. The file prefix defaults to `UnicornRawDataRecorder`. Optional fields for 'Local subject identification' and 'Local recording identification' can be filled in to embed subject and session metadata into the BDF file header.
+
+**Processed Data CSV Logger:** Records processed EEG data in CSV format. The file prefix defaults to `UnicornRecorder`. If OSCAR is enabled, the data written by this logger reflects OSCAR-processed EEG; otherwise it reflects the currently selected filter settings.
+
+**Processed Data BDF Logger:** Records processed EEG data in BDF+ format. The file prefix defaults to `UnicornRecorder`. Optional fields for 'Local subject identification' and 'Local recording identification' are available. If OSCAR is enabled, the data written by this logger reflects OSCAR-processed EEG; otherwise it reflects the currently selected filter settings.
+
+Raw data loggers always record the unfiltered signal regardless of any processing settings.
 
 <p align="center">
 <img src="./img/rec6.png" alt="drawing" width="500"/><br/>
@@ -150,8 +159,21 @@ Data is stored in the BDF+ file format if BDF logging is enabled. Data can be lo
 </p>
 
 ### Network settings
+Unicorn Recorder features multiple network interfaces for sending triggers from an external application to Unicorn Recorder, or for streaming data from Unicorn Recorder to an external application.
 
-Unicorn Recorder features multiple network interfaces for sending triggers from an external application to Unicorn Recorder or data from Unicorn Recorder to an external application.
+Five network interface types are available, each of which can be individually enabled or disabled:
+
+**Trigger UDP Input:** Receives trigger values from an external application (e.g. a stimulus presentation tool) via UDP. IP and port can be configured freely. In the example above, the IP is set to `127.0.0.1` and the port is set to `1000`.
+
+**Raw Data UDP Output:** Streams unprocessed EEG data to an external application via UDP. IP and port can be configured freely. In the example above, the IP is set to `127.0.0.1` and the port is set to `1002`. Raw data output always reflects the unfiltered signal regardless of any processing settings.
+
+**Raw Data LSL Output:** Streams unprocessed EEG data to an external application via LSL. The stream name can be configured freely. In the example above, the stream name is set to `UnicornRecorderRawDataLSLStream`. Raw data output always reflects the unfiltered signal regardless of any processing settings.
+
+**Processed Data UDP Output:** Streams processed EEG data to an external application via UDP. IP and port can be configured freely. In the example above, the IP is set to `127.0.0.1` and the port is set to `1001`. If OSCAR is enabled, the data transmitted via this interface reflects OSCAR-processed EEG; otherwise it reflects the currently selected filter settings.
+
+**Processed Data LSL Output:** Streams processed EEG data to an external application via LSL. The stream name can be configured freely. In the example above, the stream name is set to `UnicornRecorderLSLStream`. If OSCAR is enabled, the data transmitted via this interface reflects OSCAR-processed EEG; otherwise it reflects the currently selected filter settings.
+
+Note that the port used for the Trigger UDP Input must differ from the ports used for data outputs.
 
 <p align="center">
 <img src="./img/rec7.png" alt="drawing" width="500"/><br/>
