@@ -53,17 +53,44 @@ This dialog is displayed if the connection attempt failed. Make sure that the de
 <img src="./img/rec4.png" alt="drawing" width="800"/><br/>
 </p>
 
-### 1. Start/Stop acquisition
+#### 1. Start/Stop acquisition
 
 This button initiates or halts data acquisition. The play button is visible when the device is connected and data acquisition is not active. Press the play button to initiate data acquisition. Data will be displayed after the play button was clicked. The stop button is visible if a data acquisition or recording session is currently active. To terminate a running data acquisition or recording session, press the stop button.
 
-### 2. Record
+#### 2. Record
 
 This button initiates or halts data recording. If data acquisition is not initiated data acquisition and recording are initiated; if data acquisition is running, the recording module is attached according to the current recording configuration. 
 
-### 3. Settings
+#### 3. Settings
 
 The settings dialog allows to configure acquisition, recording, network and device settings.
+
+#### 4. User Manual
+
+By clicking on the questionmark symbol you will be directed to the user manual for the Unicorn Recorder Hybrid Black, which is available on GitHub.
+
+### Status bar
+<p align="center">
+<img src="./img/rec19.png" alt="drawing" width="300"/><br/>
+</p>
+
+#### 1. Wireless Data Loss
+
+This icon alerts you when samples are being dropped due to wireless interference or transmission artifacts. 
+To ensure optimal signal integrity, it is recommended to conduct recordings in an environment with minimal 2.4 GHz wireless traffic. If you encounter data loss, consider using a Wi-Fi analyzer (available on PC, Android, and iOS) to scan for local channel congestion, and verify that your operating system has the latest device drivers installed.
+
+#### 2. Network Interfaces
+
+Indicates the active state of your network outputs. This icon illuminates in blue whenever at least one stream is active, and turns gray when all streams are disabled. 
+For details on configuring streaming outputs or trigger inputs, see [Network settings](#network-settings).
+
+#### 3. Battery Level
+
+Displays the real-time battery status of the connected Unicorn Hybrid Black device. You can also configure whether battery telemetry is saved alongside your EEG data in the [Acquisition settings](#acquisition-settings).
+
+#### 4. Disconnect
+
+Terminates the current connection with the Unicorn Hybrid Black device.
 
 ### Acquisition settings
 
